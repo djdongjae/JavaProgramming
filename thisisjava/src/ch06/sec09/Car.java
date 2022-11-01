@@ -15,7 +15,6 @@ public class Car {
 	
 	void run() {
 		this.setSpeed(100);
-		System.out.println(this.model + "가 달립니다.(시속:" + this.speed + "km/h)");
+		System.out.println(this.model + "가 달립니다.(시속: " + this.speed + "km/h)");
 	}
-
 }
