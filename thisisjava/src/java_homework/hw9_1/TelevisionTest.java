@@ -14,7 +14,7 @@ public class TelevisionTest {
 		
 		// TODO Auto-generated method stub
 		System.out.print("현재까지 생성된 텔레비전 수: ");
-		System.out.println(Television.numberOfTVs);
+		System.out.println(Television.getNumberOfTVs());
 		
 		Television tv1 = new Television();
 		Television tv2 = new Television("lg");
@@ -25,7 +25,7 @@ public class TelevisionTest {
 		System.out.println(tv3);
 		
 		System.out.print("현재까지 생성된 텔레비전 수: ");
-		System.out.println(Television.numberOfTVs);
+		System.out.println(Television.getNumberOfTVs());
 
 	}
 

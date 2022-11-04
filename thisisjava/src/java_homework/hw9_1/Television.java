@@ -11,7 +11,7 @@ public class Television {
 	private String model;
 	private int price;
 	
-	static int numberOfTVs = 0;
+	private static int numberOfTVs = 0;
 	
 	public void set_model(String model) {
 		this.model = model;
@@ -45,6 +45,10 @@ public class Television {
 		this.model = model;
 		this.price = price;
 		Television.numberOfTVs += 1;
+	}
+	
+	public static int getNumberOfTVs() {
+		return numberOfTVs;
 	}
 	
 	public String toString() {
