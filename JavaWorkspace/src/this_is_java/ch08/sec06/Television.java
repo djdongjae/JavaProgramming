@@ -1,19 +1,16 @@
-package this_is_java.ch08.sec04;
+package this_is_java.ch08.sec06;
 
 public class Television implements RemoteControl {
-	//turnOn() 추상 메소드 오버라이딩
 	@Override
 	public void turnOn() {
 		System.out.println("TV를 켭니다.");
 	}
 	
-	//turnOff() 추상 메소드 오버라이딩
 	@Override
 	public void turnOff() {
 		System.out.println("TV를 끕니다.");
 	}
 	
-	//setVolume() 추상 메소드 오버라이딩
 	@Override
 	public void setVolume(int volume) {
 		if(volume>RemoteControl.MAX_VOLUME) {
