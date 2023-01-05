@@ -1,4 +1,4 @@
-package this_is_java_1회독.ch06.sec07.exam04;
+package this_is_java_1회독.ch06.sec07.exam05;
 
 public class Car {
 	
@@ -7,15 +7,12 @@ public class Car {
 	String color;
 	int maxSpeed;
 	
-	Car() {}
-	
 	Car(String model) {
-		this.model = model;
+		this(model, "은색", 250);
 	}
 	
 	Car(String model, String color) {
-		this.model = model;
-		this.color = color;
+		this(model, color, 250);
 	}
 	
 	Car(String model, String color, int maxSpeed) {
