@@ -1,4 +1,4 @@
-package hansotbap.sec1;
+package hansotbap.sec01;
 
 public class Student {
 
