@@ -47,7 +47,7 @@ public class Nation {
 	public static final List<Nation> nations = List.of(
 			new Nation("ROK", Nation.Type.LAND, 51.4, 11),
 			new Nation("New Zealand", Type.ISLAND, 4.5, 49),
-			new Nation("USA", Type.ISLAND, 318.9, 1),
+			new Nation("USA", Type.LAND, 318.9, 1),
 			new Nation("China", Type.LAND, 1355.7, 2),
 			new Nation("Philiphine", Type.LAND, 107.7, 36),
 			new Nation("United Kingdom", Type.ISLAND, 63.7, 5),
