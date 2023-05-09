@@ -18,7 +18,7 @@ public class Circle {
 	
 	public Circle(int radius) {
 		this.radius = radius;
-		radius++;
+		radius
 	}
 	
 
