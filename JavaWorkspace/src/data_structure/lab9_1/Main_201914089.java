@@ -9,6 +9,7 @@ public class Main_201914089 {
 
 		// 트리를 중순위 순회
 		tree.inorder();
+		System.out.println("hello world");
 	}
 }
 
