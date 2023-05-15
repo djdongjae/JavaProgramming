@@ -1,6 +1,6 @@
 package data_structure.lab9_1;
 
-public class Main_201914089 {
+class Main_201914089 {
 	public static void main(String[] args) {
 		System.out.println("lab9_1:오동재");
 
