@@ -15,7 +15,8 @@ public class AirplaneTest {
 		
 		Fighter b2=new Fighter("F400",true);
 		b2.showInfo();
-
+		
+		System.out.println("hello world");
 	}
 
 }
