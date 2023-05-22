@@ -1,4 +1,4 @@
-package hansotbap.week06;
+package hansotbap.week06.lib;
 
 public class Airliner extends Airplane {
 	
@@ -26,7 +26,21 @@ public class Airliner extends Airplane {
 	public void showInfo() {
 		super.showInfo();
 		System.out.println("탑승 인원수: " + this.passenger);
-		System.out.println();
+	}
+
+	@Override
+	public void takeoff() {
+		System.out.println("여객기 " + this.getId() + "가 이륙합니다.");
+	}
+
+	@Override
+	public void landing() {
+		System.out.println("여객기 " + this.getId() + "가 착륙합니다.");
+	}
+
+	@Override
+	public void flight() {
+		System.out.println("여객기 " + this.getId() + "가 비행합니다.");
 	}
 	
 	

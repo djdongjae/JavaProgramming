@@ -1,6 +1,6 @@
-package hansotbap.week06;
+package hansotbap.week06.lib;
 
-public class Airplane {
+public abstract class Airplane {
 	
 	private String id;
 	private String type;
@@ -30,5 +30,11 @@ public class Airplane {
 		System.out.println("식별번호: " + this.id);
 		System.out.println("비행기 타입: " + this.type);
 	}
+	
+	public abstract void takeoff();
+	
+	public abstract void landing();
+	
+	public abstract void flight();
 
 }
