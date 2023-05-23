@@ -24,7 +24,8 @@ public class Airliner extends Airplane {
 	
 	@Override
 	public void showInfo() {
-		super.showInfo();
+		System.out.println("식별번호: " + this.getId());
+		System.out.println("비행기 타입: " + this.getType());
 		System.out.println("탑승 인원수: " + this.passenger);
 	}
 

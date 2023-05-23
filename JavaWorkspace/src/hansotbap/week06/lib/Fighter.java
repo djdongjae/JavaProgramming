@@ -32,7 +32,8 @@ public class Fighter extends Airplane implements Weapon  {
 	
 	@Override
 	public void showInfo() {
-		super.showInfo();
+		System.out.println("식별번호: " + this.getId());
+		System.out.println("비행기 타입: " + this.getType());
 		System.out.println("스텔스 모드: " + getStealth());
 	}
 
@@ -77,7 +78,7 @@ public class Fighter extends Airplane implements Weapon  {
 		// TODO Auto-generated method stub
 		System.out.print("무기를 선택하시오: ");
 		int index = sc.nextInt() - 1;
-		System.out.println("\n" + WEAPON_LIST[index] + "이(가) 발사되었습니다.");
+		System.out.println(WEAPON_LIST[index] + "이(가) 발사되었습니다.");
 	}
 
 }

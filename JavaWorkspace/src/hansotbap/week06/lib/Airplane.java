@@ -26,10 +26,7 @@ public abstract class Airplane {
 		this.type = type;
 	}
 	
-	public void showInfo() {
-		System.out.println("식별번호: " + this.id);
-		System.out.println("비행기 타입: " + this.type);
-	}
+	public abstract void showInfo();
 	
 	public abstract void takeoff();
 	
