@@ -1,4 +1,4 @@
-package data_structure.lab10_2;
+package data_structure.lab10_2_2;
 
 public class Main_201914089 {
 
@@ -32,27 +32,20 @@ class ListGraph {
 
 	public ListGraph(int n) { // 정점이 n개이고, 간선이 없는 그래프 생성
 		list = new Node[n];
-		for (int i = 0; i < n; i++) {
-			list[i] = new Node();
-		}
 		this.n = n;
 	}
 
 	public void insertEdge(int v1, int v2) { // 그래프에 간선 <v1, v2> 삽입
 		Node newNode = new Node();
 		newNode.vertex = v2;
-		if (list[v1].link == null) {
-			list[v1].link = newNode;
-		} else {
-			newNode.link = list[v1].link;
-			list[v1].link = newNode;
-		}
+		newNode.link = list[v1];
+		list[v1] = newNode;
 	}
 
 	public void printAdjList() { // 인접 리스트를 모두 출력
 		for (int i = 0; i < n; i++) {
 			System.out.print("정점 " + i + "의 인접리스트");
-			for (Node temp = list[i].link; temp != null; temp = temp.link) {
+			for (Node temp = list[i]; temp != null; temp = temp.link) {
 				System.out.print(" -> " + temp.vertex);
 			}
 			System.out.println();
