@@ -86,7 +86,14 @@ class ListGraph {
 		return false;
 	}
 	
-	public 
+	public void deleteEdge(int v1, int v2) {
+		for (Node temp = list[v1]; temp != null; temp = temp.link) {
+			if (temp.vertex == v2) {
+				temp.
+			}
+		}
+		return false;
+	}
 
 	public void printAdjList() { // 인접 리스트를 모두 출력
 		for (int i = 0; i < n; i++) {
