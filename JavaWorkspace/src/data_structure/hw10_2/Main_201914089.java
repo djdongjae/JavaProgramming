@@ -63,36 +63,46 @@ class ListGraph {
 	}
 
 	public void insertEdge(int v1, int v2) { // 그래프에 간선 <v1, v2> 삽입
-		Node newNode = new Node();
-		newNode.vertex = v2;
-		newNode.link = list[v1];
-		list[v1] = newNode;
+		Node newNode = new Node(); // 새로운 노드 자리
+		newNode.vertex = v2; // 정점 값 삽입
+		newNode.link = list[v1]; // 새로운 노드에 기존 리스트 정보 삽입
+		list[v1] = newNode; // 기존 리스트에 새로운 노드 삽입
 	}
 	
-	public int outDegree(int v) {
-		int count = 0;
+	public int outDegree(int v) { // 진출차수 리턴
+		int count = 0; // 차수 초기화
 		for (Node temp = list[v]; temp != null; temp = temp.link) {
-			count++;
+			count++; // 차수 카운트
 		}
-		return count;
+		return count; // 진출 차수 반환
 	}
 	
-	public boolean hasEdge(int v1, int v2) {
+	public boolean hasEdge(int v1, int v2) { // 간선 존재 여부 검사
 		for (Node temp = list[v1]; temp != null; temp = temp.link) {
-			if (temp.vertex == v2) {
+			if (temp.vertex == v2) { // 해당 간선 존재시 참 반환
 				return true;
 			}
 		}
-		return false;
+		return false; // 끝까지 없으면 거짓 반환
 	}
 	
-	public void deleteEdge(int v1, int v2) {
-		for (Node temp = list[v1]; temp != null; temp = temp.link) {
-			if (temp.vertex == v2) {
-				temp.
+	public void deleteEdge(int v1, int v2) { // 간선을 매개변수로 받아 삭제
+		if (list[v1] != null && list[v1].vertex == v2) { // 첫번째 간선일 경우
+			list[v1] = list[v1].link; // 삭제
+			return; // 종료
+		}
+		Node old;
+		for (Node pre = list[v1]; pre != null; pre = pre.link) { // 첫번째가 아닐 경우
+			old = pre.link;
+			if (old == null) { // 해당 간선이 없을 경우
+				return;
+			} else {
+				if (old.vertex == v2) { // 해당 간선일 경우
+					pre.link = old.link; // 삭제
+					return; // 종료
+				}
 			}
 		}
-		return false;
 	}
 
 	public void printAdjList() { // 인접 리스트를 모두 출력
