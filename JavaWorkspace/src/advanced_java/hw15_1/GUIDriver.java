@@ -23,7 +23,7 @@ public class GUIDriver extends JFrame {
 		showNorth();
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(300, 105);
+		setSize(300, 150);
 		setVisible(true);
 	}
 	
