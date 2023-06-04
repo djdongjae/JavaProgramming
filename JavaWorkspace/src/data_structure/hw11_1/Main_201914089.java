@@ -21,7 +21,6 @@ public class Main_201914089 {
 			array[i] = new Meeting(strArray[0], Integer.parseInt(strArray[1]), Integer.parseInt(strArray[2]));
 		}
 		
-		insertti
 	}
 	
 	public static void insertionSort(Meeting[] meetings) {
