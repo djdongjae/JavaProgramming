@@ -30,6 +30,8 @@ public class Main_201914089 {
 		}
 		
 		scanner.close();
+		
+		System.out.println("안녕하세요");
 	}
 	
 	// 삽입 정렬 메소드
