@@ -17,6 +17,7 @@ public class IOStreamDemo {
 			System.out.write(ba[i]);
 		}
 		System.out.flush();
+		System.out.println("안녕하세요");
 	}
 
 }
